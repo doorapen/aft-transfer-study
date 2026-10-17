@@ -1,0 +1,61 @@
+configuration,epoch,training_accuracy_percent,logged_loss_sum
+Basic implementation,2,16.4,2958.168
+Basic implementation,4,23.49,2616.516
+Basic implementation,6,28.42,2400.761
+Basic implementation,8,32.21,2245.354
+Basic implementation,10,35.2,2127.479
+Basic implementation,12,37.55,2027.753
+Basic implementation,14,39.69,1949.123
+Basic implementation,16,41.45,1877.555
+Basic implementation,18,42.96,1820.701
+Basic implementation,20,44.62,1767.045
+RBF kernel only,2,21.71,2524.127
+RBF kernel only,4,33.69,2041.448
+RBF kernel only,6,40.74,1777.255
+RBF kernel only,8,45.82,1606.704
+RBF kernel only,10,49.54,1473.385
+RBF kernel only,12,52.62,1370.547
+RBF kernel only,14,55.21,1284.916
+RBF kernel only,16,57.52,1210.082
+RBF kernel only,18,59.78,1138.78
+RBF kernel only,20,61.54,1079.002
+Bi-level optimization only,2,18.39,2826.552
+Bi-level optimization only,4,28.37,2401.662
+Bi-level optimization only,6,34.56,2155.799
+Bi-level optimization only,8,39.18,1979.063
+Bi-level optimization only,10,42.19,1849.29
+Bi-level optimization only,12,45.12,1741.788
+Bi-level optimization only,14,47.32,1661.41
+Bi-level optimization only,16,49.57,1583.688
+Bi-level optimization only,18,51.5,1525.882
+Bi-level optimization only,20,53.27,1463.413
+Data augmentation only,2,12.25,3150.85
+Data augmentation only,4,18.38,2831.326
+Data augmentation only,6,21.97,2656.891
+Data augmentation only,8,25.21,2530.958
+Data augmentation only,10,27.71,2425.101
+Data augmentation only,12,29.39,2337.176
+Data augmentation only,14,31.38,2271.314
+Data augmentation only,16,33.1,2207.961
+Data augmentation only,18,34.11,2156.372
+Data augmentation only,20,35.41,2111.132
+BatchNorm & Dropout only,2,23.72,2635.166
+BatchNorm & Dropout only,4,32.97,2223.07
+BatchNorm & Dropout only,6,38.77,1999.884
+BatchNorm & Dropout only,8,42.49,1859.621
+BatchNorm & Dropout only,10,45.28,1753.177
+BatchNorm & Dropout only,12,47.9,1666.726
+BatchNorm & Dropout only,14,50.03,1597.016
+BatchNorm & Dropout only,16,51.68,1535.286
+BatchNorm & Dropout only,18,53.23,1489.099
+BatchNorm & Dropout only,20,54.39,1442.986
+All improvements,2,19.55,2616.639
+All improvements,4,26.47,2320.742
+All improvements,6,30.61,2157.734
+All improvements,8,33.54,2042.478
+All improvements,10,35.93,1954.944
+All improvements,12,38.15,1885.668
+All improvements,14,39.74,1825.549
+All improvements,16,40.95,1775.93
+All improvements,18,42.05,1732.899
+All improvements,20,43.2,1688.716

@@ -1,0 +1,53 @@
+{
+  "config": {
+    "seed": 42,
+    "epochs": 20,
+    "batch_size": 64,
+    "lr": 0.001,
+    "beta": 0.0,
+    "kernel": "linear",
+    "sigma": 1.0,
+    "layers": [
+      -1
+    ],
+    "regularization": false,
+    "augmentation": false,
+    "validation_size": 5000,
+    "device": "cpu"
+  },
+  "mode": "synthetic_smoke",
+  "python": "3.12.14",
+  "torch": "2.14.1",
+  "teacher_weights": "random",
+  "teacher_input_size": 32,
+  "train_indices": [
+    14,
+    17,
+    4,
+    13,
+    8,
+    9,
+    1,
+    5,
+    12,
+    23,
+    21,
+    20,
+    7,
+    11,
+    16,
+    0
+  ],
+  "validation_indices": [
+    6,
+    15,
+    22,
+    2,
+    10,
+    19,
+    3,
+    18
+  ],
+  "test_selection": "official test split, evaluated after validation selection",
+  "config_sha256": "5d7dcfadbef52e213edfe34f60aa947786acb1a0b9ef90773d4e7cf03c8148a3"
+}

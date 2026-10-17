@@ -1,0 +1,30 @@
+{
+  "mode": "synthetic_smoke",
+  "best_epoch": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "train": {
+        "examples": 16,
+        "accuracy": 0.0,
+        "loss": 4.651237487792969,
+        "task_loss": 4.650457859039307,
+        "alignment_loss": 0.0007797313155606389
+      },
+      "validation": {
+        "examples": 8,
+        "accuracy": 0.0,
+        "loss": 4.732073783874512,
+        "task_loss": 4.732073783874512,
+        "alignment_loss": 0.0
+      }
+    }
+  ],
+  "test": {
+    "examples": 8,
+    "accuracy": 0.0,
+    "loss": 4.795351028442383,
+    "task_loss": 4.795351028442383,
+    "alignment_loss": 0.0
+  }
+}

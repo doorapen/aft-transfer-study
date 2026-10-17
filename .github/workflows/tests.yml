@@ -1,0 +1,14 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install pytest==9.1.1
+      - run: python -m pytest -q
+      - run: python train.py --config configs/rbf_multilayer.json --smoke --output runs/smoke

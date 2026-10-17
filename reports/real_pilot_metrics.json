@@ -1,0 +1,27 @@
+{
+  "examples": 10000,
+  "correct": {
+    "baseline": 1878,
+    "aft_rbf": 1853
+  },
+  "accuracy_percent": {
+    "baseline": 18.78,
+    "aft_rbf": 18.529999999999998
+  },
+  "aft_minus_baseline_pp": -0.25,
+  "aft_only_correct": 386,
+  "baseline_only_correct": 411,
+  "paired_bootstrap_95_percentile_interval_pp": [
+    -0.8,
+    0.27999999999999997
+  ],
+  "bootstrap": {
+    "seed": 20261016,
+    "resamples": 2000,
+    "scope": "test-example sampling conditional on this single training seed; not training-seed uncertainty"
+  },
+  "input_sha256": {
+    "aft_rbf_test_predictions.json": "191b01793fd92279e4f7c3311dfb2ec0503c557268579fc2a8f8406e109d51f2",
+    "baseline_test_predictions.json": "ec759d7e396ad7740623030067fd98057a4de0476263888305444c2fbf59b1c3"
+  }
+}

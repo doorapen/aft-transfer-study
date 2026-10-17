@@ -1,0 +1,1 @@
+{"seed":42,"epochs":20,"batch_size":64,"lr":0.001,"beta":1.0,"kernel":"linear","sigma":1.0,"layers":[-1],"regularization":false,"augmentation":false,"validation_size":5000,"device":"cpu"}
