@@ -12,7 +12,17 @@ python -m pytest -q
 python train.py --config configs/rbf_multilayer.json --smoke --output runs/smoke
 ```
 
-Validated locally with Python 3.12 on macOS CPU. The smoke run uses 16 synthetic training images, 8 validation images, 8 test images and a randomly initialized teacher. It verifies execution and gradients, not classification quality. CI configuration is included; hosted CI has not been run.
+Validated locally with Python 3.12 on macOS CPU. The smoke run uses 16 synthetic training images, 8 validation images, 8 test images and a randomly initialized teacher. It verifies execution and gradients, not classification quality. Hosted checks: [GitHub Actions](https://github.com/doorapen/aft-transfer-study/actions/workflows/tests.yml).
+
+## Extended matched experiment (2026-10-16)
+
+Three seeds (42/43/44), 30 epochs each, fixed 10k/2k/10k split. Mean test accuracy: baseline 30.46%, RBF AFT 31.96%. See [full results and limits](reports/EXTENDED_30EP_2026-10-16.md). This small-subset exploratory experiment is not the full training-set benchmark.
+
+Recompute the published summary without training:
+```bash
+python summarize_extended.py --runs-dir reports/extended_30ep/evidence
+```
+Plot with `pip install -r requirements-plots.txt` then `python plot_extended.py`.
 
 ## Real-data pilot completed
 
@@ -47,15 +57,6 @@ See [historical audit](reports/HISTORICAL.md) and `reports/historical_training.c
 
 The author reports the course project was largely independently completed in Fall 2024. Original method and upstream code belong to their authors: [Transferring Knowledge from Large Foundation Models to Small Downstream Models](https://arxiv.org/abs/2406.07337). The 2026 implementation repair was prepared with coding-assistant help. It is separate from historical course results. No paper PDF, downloaded upstream code bundle, model weights or dataset is included in this release. No open-source license has been assigned to this prepared release.
 
-## Extended matched experiment (2026-10-16)
-
-Three seeds (42/43/44), 30 epochs each, fixed 10k/2k/10k split. Mean test accuracy: baseline 30.46%, RBF AFT 31.96%. See [full results and limits](reports/EXTENDED_30EP_2026-10-16.md). This small-subset exploratory experiment is not the full training-set benchmark.
-
-Recompute the published summary without training:
-```bash
-python summarize_extended.py --runs-dir reports/extended_30ep/evidence
-```
-Plot with `pip install -r requirements-plots.txt` then `python plot_extended.py`.
 
 Resume statements and contribution limits: [evidence note](reports/RESUME_CLAIMS.md).
 
