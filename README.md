@@ -1,6 +1,8 @@
-# Kernel Feature Transfer Study
+# Feature Transfer and Knowledge Distillation on CIFAR-100
 
-A CIFAR-100 course experiment inspired by Adaptive Feature Transfer (AFT), with a corrected training harness. This is **not an exact reproduction of the AFT paper** and does not introduce AFT as a new method.
+This NYU Bayesian Machine Learning course project began with kernel-based feature transfer in Fall 2024. An AI-assisted follow-up in October and November 2026 compared student training with matched, shuffled and class-average teacher probabilities.
+
+On 10,000 training images and 2,000 validation images, a small CNN trained with matched, out-of-fold teacher probabilities achieved **38.53% mean epoch-30 validation accuracy** across seeds 42, 43 and 44. Within-class shuffling yielded **34.30%**, a paired difference of **4.23 percentage points**. [Experiment design and per-seed prediction counts](reports/CIFAR100_KD_RESULTS.md).
 
 ## Quick start
 
