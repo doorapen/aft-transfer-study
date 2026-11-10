@@ -19,6 +19,8 @@ Each cell gives the number of correct predictions out of the same 2,000 validati
 | 44 | 760 (38.00%) | 685 (34.25%) | 725 (36.25%) | +3.75 pp |
 | Mean | **38.53%** | **34.30%** | 35.42% | **+4.23 pp** |
 
+Under the same fixed-epoch validation protocol, the small CNN trained only on hard labels reached 30.80%, 29.60% and 30.40% on seeds 42, 43 and 44, respectively. Its mean was **30.27%**, giving matched distillation an **8.27 percentage point** advantage. [Seed 42 history](extended_30ep/evidence/extended-30ep-seed42/baseline_history.json) · [Seed 43 history](extended_30ep/evidence/extended-30ep-seed43/baseline_history.json) · [Seed 44 history](extended_30ep/evidence/extended-30ep-seed44/baseline_history.json).
+
 Seed 42 was the initial screen. On the two subsequent seeds, the matched-minus-shuffled difference averaged **3.625 percentage points**. The three runs share the data split, out-of-fold teacher outputs and permutation. These figures describe exploratory validation performance on this subset.
 
 ## What the other controls showed
